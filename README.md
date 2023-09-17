@@ -67,10 +67,40 @@ In the **Total Incident** columns all the entries are filled with value 1. Which
 
 After this, the **Location 1** columns contains the tuple of ***(Longitude, Latitude)*** as values. There are also separate columns for Longitude and Latitude as well. So, dropping the Location 1 column also does not affect the dataset quality.
 
-![This is the Screenshot of the Inside and Outside data of the Dataset.](https://github.com/PicantaData/Crime-in-Baltimore/blob/main/Images/Screenshot_Inside_Outside.png)
-
 We will drop those rows with null column entries.
-After doing so, we get 263118 rows with 13 columns.
+After making these changes, We got **2,63,118 rows** with **13 columns**.
 
 # 3. Data Visualization
 We have tried to made inference from this data by analysing the yearly, monthly, weekly, daily and hourly of the crime committed in Balimore. You can find scatter plots, pie charts and bar graphs of these inferences in the **Jupyter Notebook**.  
+
+# 4. Pre-Processing
+We have dropped certain columns such as 'Latitude', 'Longitude' for better preprocessing of data.
+
+We have also converted the "Time Stamp" from Exact Time in HH:MM format to Minutes.
+
+Feature Selection is done to avoid data redundancy by dropping highly correlated features. In our Dataset, there is no strong correlated features found.
+With Box Plotting, we have identified the Outliers and removed them accordingly; Premise, Description and Crimecode.
+
+The Final Pre-processed CSV file consist of **2,15,392 rows** and **12 columns**.
+
+# 5. Modeling
+Based on the following attributes we are going to predict time at which it is not safe to go out in that locality.
+*   Crime Description
+*   Weapon type
+*   Crime category(inside/outside)
+*   Crime district
+
+## Model types for our Analysis:
+1. Linear Regression
+2. XGBoost 
+3. Random Forest Regression  
+4. Ridge Regression
+5. Lasso Regression
+
+# Contributors
+* Krupesh Parmar (202101160) - Data Cleaning and Random Forest Regression
+* Vrishin Shah (202101094) - Data Visualization and Linear Regression
+* Srikar Padaliya (202101095) - Data Preprocessing and Ridge Regression
+* Aditya Singhania (202101086) - Data Visualization and XGBoost Regression
+* Kirtan Mevada (202101012) - Lasso Regression, Data Cleaning and Documentation
+
