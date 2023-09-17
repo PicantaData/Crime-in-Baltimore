@@ -61,4 +61,16 @@ So, the blank cells in weapon cells doesn't indicate that the data is missing, b
 
 So, we can fill all this blank cells with the "No weapon" value.
 
-In the 'Total Incident' columns all the entries are filled with value 1. Which does not provide any value to the dataset. So, there is no loss in dataset quality in dropping this columns.
+![This is the Screenshot of the Inside and Outside data of the Dataset.](https://github.com/PicantaData/Crime-in-Baltimore/blob/main/Images/Screenshot_Total_Incidents.png)
+
+In the **Total Incident** columns all the entries are filled with value 1. Which does not provide any value to the dataset. So, there is no loss in dataset quality in dropping this columns.
+
+After this, the **Location 1** columns contains the tuple of ***(Longitude, Latitude)*** as values. There are also separate columns for Longitude and Latitude as well. So, dropping the Location 1 column also does not affect the dataset quality.
+
+![This is the Screenshot of the Inside and Outside data of the Dataset.](https://github.com/PicantaData/Crime-in-Baltimore/blob/main/Images/Screenshot_Inside_Outside.png)
+
+We will drop those rows with null column entries.
+After doing so, we get 263118 rows with 13 columns.
+
+# 3. Data Visualization
+We have tried to made inference from this data by analysing the yearly, monthly, weekly, daily and hourly of the crime committed in Balimore. You can find scatter plots, pie charts and bar graphs of these inferences in the **Jupyter Notebook**.  
