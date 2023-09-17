@@ -95,6 +95,10 @@ Based on the following attributes we are going to predict time at which it is no
 4. Ridge Regression
 5. Lasso Regression
 
+This is the result of all the Regression Models:
+
+![This is the Screenshot of the Model Results](https://github.com/PicantaData/Crime-in-Baltimore/blob/main/Images/Screenshot_Model_results.png)
+
 # Contributors
 * Krupesh Parmar (202101160) - Data Cleaning and Random Forest Regression
 * Vrishin Shah (202101094) - Data Visualization and Linear Regression
