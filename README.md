@@ -57,13 +57,11 @@ It is observed that where ever weapon values are not available, the associated c
 
 In these types of crime most of the time there are not any weapon involved in crime.
 
-So, the blank cells in weapon cells doesn't indicate that the data is missing, but we can conclude that *there could no weapons involved in the crime at the first place*.
-
-So, we can fill all this blank cells with the "No weapon" value.
-
-![This is the Screenshot of the Inside and Outside data of the Dataset.](https://github.com/PicantaData/Crime-in-Baltimore/blob/main/Images/Screenshot_Total_Incidents.png)
+The blank cells in weapon cells doesn't indicate that the data is missing, but we can conclude that *there could no weapons involved in the crime at the first place*. So, we can fill all this blank cells with the "No weapon" value.
 
 In the **Total Incident** columns all the entries are filled with value 1. Which does not provide any value to the dataset. So, there is no loss in dataset quality in dropping this columns.
+
+![This is the Screenshot of the Total Crime Incidents happened in Baltimore](https://github.com/PicantaData/Crime-in-Baltimore/blob/main/Images/Screenshot_Total_Incidents.png)
 
 After this, the **Location 1** columns contains the tuple of ***(Longitude, Latitude)*** as values. There are also separate columns for Longitude and Latitude as well. So, dropping the Location 1 column also does not affect the dataset quality.
 
