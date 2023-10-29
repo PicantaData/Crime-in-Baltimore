@@ -9,8 +9,6 @@ This project consists of 6 parts:
 3. Data visualization
 4. Data Preprocessing
 5. Modeling
-6. Inference
-7. Conclusion
 
 # 1. Introduction
 
